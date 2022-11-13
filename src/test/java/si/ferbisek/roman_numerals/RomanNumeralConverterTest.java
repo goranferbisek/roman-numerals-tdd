@@ -45,4 +45,24 @@ public class RomanNumeralConverterTest {
         Assertions.assertEquals(RomanNumeralConverter.convert(10), "X");
     }
 
+    @Test
+    void given_latin_11_then_roman_XI() {
+        Assertions.assertEquals(RomanNumeralConverter.convert(11), "XI");
+    }
+
+    @Test
+    void given_latin_40_then_roman_XL() {
+        Assertions.assertEquals(RomanNumeralConverter.convert(40), "XL");
+    }
+
+    @Test
+    void given_latin_41_then_roman_XLI() {
+        Assertions.assertEquals(RomanNumeralConverter.convert(41), "XLI");
+    }
+
+    @Test
+    void given_latin_50_then_roman_L() {
+        Assertions.assertEquals(RomanNumeralConverter.convert(50), "L");
+    }
+
 }

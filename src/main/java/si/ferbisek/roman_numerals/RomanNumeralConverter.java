@@ -10,8 +10,16 @@ public class RomanNumeralConverter {
             return "V";
         if (number < 9)
             return convert(5) + convert(number - 5);
-        if (number == 9)
+        if (number < 10)
             return "IX";
-        return "X";
+        if (number == 10)
+            return "X";
+        if (number < 40)
+            return convert(10) + convert(number - 10);
+        if (number == 40)
+            return "XL";
+        if (number < 50)
+            return convert(40) + convert(number - 40);
+        return "L";
     }
 }
